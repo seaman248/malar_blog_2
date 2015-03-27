@@ -1,2 +1,1 @@
-global.jQuery = require('jquery');
-console.log(jQuery);
+global.jQuery = global.$ = require('jquery');

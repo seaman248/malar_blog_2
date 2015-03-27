@@ -1,0 +1,18 @@
+mixin navLink(name)
+	li
+		a(href="#") #{name}
+
+
+
+nav
+	.logo
+		a(href="/")
+			img(src="img/logo.png")
+	.navbar
+		ul
+			+navLink('Уроки')
+			+navLink('Блог')
+			+navLink('О проекте')
+	.responsive_toogle_button
+		button
+			i.fa.fa-bars
