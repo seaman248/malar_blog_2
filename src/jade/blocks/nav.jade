@@ -5,14 +5,14 @@ mixin navLink(name)
 
 
 nav
-	.logo
-		a(href="/")
-			img(src="img/logo.png")
+	.navhead
+		.logo
+			a(href="/") Malar
+		.responsive_toogle_button
+			button
+				i.fa.fa-bars
 	.navbar
 		ul
 			+navLink('Уроки')
 			+navLink('Блог')
 			+navLink('О проекте')
-	.responsive_toogle_button
-		button
-			i.fa.fa-bars
