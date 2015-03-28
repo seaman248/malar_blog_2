@@ -1,7 +1,8 @@
 nav
 	gs('fluid')
 	font-family Open Sans, sans-serif
-	border-bottom 1px solid #DEDEDE
+	border-bottom 1px solid #DCDCDC
+	padding-bottom em(5)
 	.navhead
 		clearfix()
 	.logo
@@ -17,37 +18,42 @@ nav
 			color #FF5555
 			margin 0
 			padding 0
+			transition padding-left 0.18s ease-out 0.1s
+		a:hover
+			padding-left em(1)
 	.responsive_toogle_button
 		text-align right
+		padding 0
+		margin 0
 		button
 			padding em(7) em(12)
 			cursor pointer
-			margin 0 em(10) 0 0
+			margin 0
 			border none
 			outline none
 			background-color rgba(226,226,226,0.3)
 			transition background-color 0.18s ease-out 0.1s
 		i
-			font-size em(36)
+			font-size em(30)
 		button:hover
 			color white
 			background-color #FF5555
 
 	.navbar
 		col(12)
+		margin-top em(10)
+		display none
 		ul
 			list-style-type none
 			text-align center
 			margin 0
 			padding 0
 		li
-			padding em(18) 0
+			padding 0 0
 		a
 			text-decoration none
 			color #5C5C5C
 			width 100%
 			display block
 			font-weight 300
-			transition font-size 0.18s ease-out 0.1s
-		a:hover
-			font-size em(18)
+			line-height em(60)
