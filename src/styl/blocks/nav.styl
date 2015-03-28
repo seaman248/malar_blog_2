@@ -3,6 +3,7 @@ nav
 	font-family Open Sans, sans-serif
 	border-bottom 1px solid #DCDCDC
 	padding-bottom em(5)
+	clearfix()
 	.navhead
 		clearfix()
 	.logo
@@ -33,6 +34,7 @@ nav
 			outline none
 			background-color rgba(226,226,226,0.3)
 			transition background-color 0.18s ease-out 0.1s
+			border-radius em(5)
 		i
 			font-size em(30)
 		button:hover
@@ -57,3 +59,25 @@ nav
 			display block
 			font-weight 300
 			line-height em(60)
+
++media-query( all, min-width 960px )
+	nav
+		gs('fixed')
+		border none
+		.responsive_toggle_button
+			display none
+		.navhead
+			col(4)
+		.navbar
+			display block
+			col(8)
+			ul
+				float right
+			li
+				display inline-block
+				margin-right em(25)
+			a
+				line-height em(42)
+				transition color 0.18s ease-in 0.1s
+			a:hover
+				color black
