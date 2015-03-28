@@ -2,6 +2,10 @@
 (function (global){
 global.jQuery = global.$ = require('jquery');
 
+// Navbar toogle button
+$('.responsive_toggle_button button').click(function(){
+	$('.navbar').toggle('slow');
+});
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
