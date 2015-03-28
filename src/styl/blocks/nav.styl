@@ -1,83 +1,79 @@
 nav
-	gs('fluid')
+	._container
+		gs('fluid')
 	font-family Open Sans, sans-serif
-	border-bottom 1px solid #DCDCDC
-	padding-bottom em(5)
-	clearfix()
+	border-bottom 1px solid BC1
+	background-color rgba(255, 255, 255, 0.3)
 	.navhead
-		clearfix()
+		clerfix()
+		padding em(0) em(5)
 	.logo
 		col(6)
-		text-align left
 		a
 			text-decoration none
 			font-weight bold
 			text-transform uppercase
-			font-size em(42)
-			font-size 38px
-			line-height 1
-			color #FF5555
+			color RED_LOGO
+			font-size em(38)
+			line-height em(27)
 			margin 0
 			padding 0
-			transition padding-left 0.18s ease-out 0.1s
-		a:hover
-			padding-left em(1)
 	.responsive_toggle_button
+		col(6)
 		text-align right
-		padding 0
-		margin 0
+		padding em(11.5) 0
 		button
-			padding em(7) em(12)
-			cursor pointer
-			margin 0
+			font-size em(38)
 			border none
 			outline none
-			background-color rgba(226,226,226,0.3)
-			transition background-color 0.18s ease-out 0.1s
-			border-radius em(5)
-		i
-			font-size em(30)
-		button:hover
-			color white
-			background-color #FF5555
-
+			line-height 1
+			background-color #fff
 	.navbar
-		col(12)
-		margin-top em(10)
 		display none
 		ul
 			list-style-type none
-			text-align center
-			margin 0
-			padding 0
 		li
-			padding 0 0
+			text-align center
 		a
 			text-decoration none
-			color #5C5C5C
-			width 100%
+			color #6D6D6D
 			display block
-			font-weight 300
-			line-height em(60)
+			font-weight 600
+			line-height 3
+			font-size em(14)
+			text-transform uppercase
+			width 30%
+			margin 0 auto
+			transition border-bottom-width 0.17s ease-in 0.1s
+		li.active
+			a
+				border-bottom 2px solid RED_LOGO
+		a:hover
+			border-bottom 2px solid RED_LOGO
 
 +media-query( all, min-width 960px )
 	nav
-		gs('fixed')
-		border none
+		._container
+			gs('fixed')
+		.logo
+			col(3)
 		.responsive_toggle_button
 			display none
-		.navhead
-			col(4)
 		.navbar
 			display block
-			col(8)
+			col(8.9)
+			text-align right
 			ul
-				float right
+				margin 0
+				padding 0
 			li
 				display inline-block
-				margin-right em(25)
+				margin 0 em(10)
+				padding em(10)
 			a
-				line-height em(42)
-				transition color 0.18s ease-in 0.1s
-			a:hover
-				color black
+				margin 0
+				padding 0
+				text-align center
+				width 100%
+			li:last-child
+				margin 0 0 0 em(10)

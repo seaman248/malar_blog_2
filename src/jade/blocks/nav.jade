@@ -1,18 +1,22 @@
-mixin navLink(name)
-	li
-		a(href="#") #{name}
-
+mixin navLink(name, active)
+	if(!active)
+		li
+			a(href="#") #{name}
+	else
+		li.active
+			a(href="#") #{name}
 
 
 nav
-	.navhead
-		.logo
-			a(href="/") Malar
-		.responsive_toggle_button
-			button
-				i.fa.fa-bars
-	.navbar
-		ul
-			+navLink('Уроки')
-			+navLink('Блог')
-			+navLink('О проекте')
+	._container
+		.navhead
+			.logo
+				a(href="/") Malar
+			.responsive_toggle_button
+				button
+					i.fa.fa-bars
+		.navbar
+			ul
+				+navLink('Уроки', true)
+				+navLink('Блог')
+				+navLink('О проекте')
