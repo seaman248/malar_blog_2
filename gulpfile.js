@@ -4,6 +4,8 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	connect = require('gulp-connect');
 
+var img = require('gulp-imagemin');
+
 gulp.task('connect', function(){
 	connect.server({
 		root: 'dest',
@@ -29,6 +31,15 @@ gulp.task('browserify', function(){
 		.pipe(require('vinyl-source-stream')('main.js'))
 		.pipe(gulp.dest('./dest/'))
 		.pipe(connect.reload());
+});
+
+gulp.task('img', function(){
+	var imgPath = './src/img/**/*';
+	gulp.src(imgPath)
+		.pipe(img({
+			progressive: true
+			}))
+		.pipe(gulp.dest('./dest/img/'));
 });
 
 gulp.task('html', function(){
