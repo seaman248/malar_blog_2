@@ -1,0 +1,68 @@
+.thumbs
+	gs('fluid')
+	font-family Open Sans, sans-serif
+	.thumbnail
+		col(6)
+		clearfix()
+		padding-bottom em(10)
+		.img
+			display block
+			position relative
+		.hover
+			content ''
+			position absolute
+			display block
+			width 100%
+			background-color rgba(0,0,0, 0.3)
+			margin 0
+			padding 0
+			top 0
+			right 0
+			left 0
+			bottom 4px
+			transition background-color 0.10s ease-in 0.09s
+		.hover:hover
+			background-color rgba(0,0,0, 0.2)
+		img
+			max-width 100%
+		.tags
+			list-style-type none
+			margin em(5) 0
+			padding 0
+			li
+				display inline-block
+				margin 0 em(5) em(5) 0
+				a
+					text-decoration none
+					color white
+					background-color black
+					padding em(4) em(8)
+					border-radius em(5)
+					font-size em(12)
+					transition-property background-color color
+					transition 0.1s ease-in 0.09s
+				a:hover
+					background-color BC2
+		.date
+			padding 0
+			margin 0
+			p
+				margin 0
+				font-size em(11)
+				color TCL
+				text-align left
+		h3
+			margin em(5) 0 em(8)
+			a
+				margin 0
+				text-decoration none
+				font-weight bold
+				color TCB
+				transition color 0.1s ease-in 0.09s
+			a:hover
+				color TCD
+		.prevTxt
+			margin em(5) 0 em(8)
+			color TCL
+			font-weight 300
+			font-size em(14)
