@@ -1,6 +1,7 @@
 .thumbs
 	gs('fluid')
 	font-family Open Sans, sans-serif
+	margin em(10) 0
 	.thumbnail
 		col(6)
 		clearfix()
@@ -66,3 +67,10 @@
 			color TCL
 			font-weight 300
 			font-size em(14)
+
++media-query( all, min-width 960px )
+	.thumbs
+		gs('fixed')
+		margin-top em(8)
+		.thumbnail
+			col(4)
