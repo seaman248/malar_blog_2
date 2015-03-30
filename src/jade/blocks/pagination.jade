@@ -1,0 +1,19 @@
+mixin fa-pag(faClass)
+	li
+		a(href="#")
+			i.fa(class='fa-'+faClass)
+mixin pag(txt)
+	li
+		a(href="#")=txt
+mixin activePag(txt)
+	li.active
+		a(href="#")=txt
+
+
+ul.pagination
+	+fa-pag('long-arrow-left')
+	+pag(1)
+	+activePag(2)
+	+pag(3)
+	+pag(4)
+	+fa-pag('long-arrow-right')
