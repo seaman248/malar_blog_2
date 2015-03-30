@@ -1,0 +1,11 @@
+mixin social(faClass)
+	li
+		a(href="#")
+			i.fa(class=faClass)
+
+footer
+	ul.footer-social-buttons
+		+social('fa-vk')
+		+social('fa-instagram')
+		+social('fa-tumblr')
+		+social('fa-twitter')
