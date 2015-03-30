@@ -5,7 +5,7 @@
 	.thumbnail
 		col(6)
 		clearfix()
-		padding-bottom em(10)
+		padding 0 0 em(10)
 		.img
 			display block
 			position relative
@@ -45,13 +45,11 @@
 				a:hover
 					background-color BC2
 		.date
-			padding 0
+			padding 0 0 em(10)
 			margin 0
-			p
-				margin 0
-				font-size em(11)
-				color TCL
-				text-align left
+			font-size em(11)
+			color TCL
+			text-align left
 		h3
 			margin em(5) 0 em(8)
 			a
@@ -59,9 +57,11 @@
 				text-decoration none
 				font-weight bold
 				color TCB
-				transition color 0.1s ease-in 0.09s
+				transition-property color
+				transition 0.1s ease-in 0.09s
 			a:hover
 				color TCD
+				text-decoration underline
 		.prevTxt
 			margin em(5) 0 em(8)
 			color TCL
