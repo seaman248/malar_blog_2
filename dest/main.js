@@ -36,6 +36,10 @@ $(window).load(function(){
 			});
 		}
 	})();
+
+	// 404 error height
+	var _errorHeight = $(window).height() - $('nav').height() - $('footer').height();
+	$('.error').height(_errorHeight);
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})

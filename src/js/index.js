@@ -34,4 +34,8 @@ $(window).load(function(){
 			});
 		}
 	})();
+
+	// 404 error height
+	var _errorHeight = $(window).height() - $('nav').height() - $('footer').height();
+	$('.error').height(_errorHeight);
 });

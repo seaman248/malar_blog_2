@@ -1,0 +1,19 @@
+.error
+	gs('fluid')
+	text-align center
+	font-family Open Sans, sans-serif
+	background url('/img/404.jpg') no-repeat
+	background-position center center
+
+	.error_name
+		font-size em(60)
+		color #fff
+	.error_description
+		font-size em(24)
+		margin 0
+		color #fff
+	.error_description::before, .error_description::after
+		content ' – '
++media-query(all, min-width 960px)
+	.error
+		gs('fixed')
