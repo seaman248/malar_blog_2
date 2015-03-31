@@ -5,11 +5,14 @@
 		max-width 100%
 		display block
 		margin 0 auto
+		max-height 400px
 	.paper_header
+		col(12)
 		h1
 			font-size em(32)
 			line-height em(18)
 	.paper_body
+		col(12)
 		a
 			text-decoration none
 			color RED_LOGO
@@ -42,3 +45,12 @@
 			li
 				margin em(5) 0
 				padding em(2) 0
+
++media-query( all, min-width 960px )
+	.paper
+		gs('fixed')
+		.paper_header
+			h1
+				font-size em(48)
+		.paper_body
+			col(12)
