@@ -1,2 +1,28 @@
-.social-side
-	position relative
++media-query(all, min-width 960px)
+	.social-side
+		position fixed
+		display block
+		top 30%
+		width rem(80)
+		ul
+			list-style-type none
+			margin 0
+			padding 0 0 0 em(15)
+			// border 1px solid TCL
+			border-top-right-radius em(8)
+			border-bottom-right-radius em(8)
+			border-left none
+			background-color rgba(255,255,255, 0.3)
+		li:first-child
+			padding-top em(10)
+		li
+			padding-bottom em(10)
+		a
+			line-height em(30)
+			width em(30)
+			background-color RED_LOGO
+			border-radius 50%
+			display block
+			text-align center
+			font-size em(24)
+			color white
