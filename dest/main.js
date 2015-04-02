@@ -40,6 +40,13 @@ $(window).load(function(){
 	// 404 error height
 	var _errorHeight = $(window).height() - $('nav').height() - $('footer').height();
 	$('.error').height(_errorHeight);
+
+	//Margin top of post-nav content
+	var _navHeight = $('nav').height();
+	$('nav').next().css({
+		'top': '20px',
+		'margin-top': '20px'
+	});
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
