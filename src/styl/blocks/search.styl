@@ -1,0 +1,43 @@
+.search-block
+	gs('fluid')
+	font-family Open Sans, sans-serif
+	.search-form
+		col(12)
+		text-align center
+		padding em(10) 0
+		input
+			col(12)
+			border 1px solid BC1
+			font-size em(19)
+			padding em(10) em(10)
+			box-sizing border-box
+			outline-color RED_LOGO
+			font-weight 300
+		button
+			col(12)
+			background-color RED_LOGO
+			border none
+			color white
+			padding em(10) em(10)
+			box-sizing border-box
+			margin-top em(5)
+	.search-cards
+		col(12)
+		.search-card
+			padding em(1) em(3)
+			margin em(10) 0
+			h4
+				margin em(12)
+				a
+					text-decoration none
+					color TCD
+				a:hover
+					text-decoration underline
+			p
+				margin em(12)
+				font-style italic
+				color TCL
+			p::before
+				content '... '
+			p::after
+				content ' ...'
