@@ -4,7 +4,7 @@
 	.search-form
 		col(12)
 		text-align center
-		padding em(10) 0
+		padding em(20) 0
 		input
 			col(12)
 			border 1px solid BC1
@@ -13,6 +13,9 @@
 			box-sizing border-box
 			outline-color RED_LOGO
 			font-weight 300
+			t-anim(box-shadow, outline-color)
+		input:focus
+			box-shadow 3px 4px 5px BC1
 		button
 			col(12)
 			background-color RED_LOGO
@@ -21,6 +24,11 @@
 			padding em(10) em(10)
 			box-sizing border-box
 			margin-top em(5)
+			font-weight 300
+			font-size em(20)
+			t-anim(box-shadow)
+		button:hover
+			box-shadow 3px 3px 5px BC1
 	.search-cards
 		col(12)
 		.search-card
@@ -41,3 +49,11 @@
 				content '... '
 			p::after
 				content ' ...'
++media-query(all, min-width 960px )
+	.search-block
+		gs('fixed')
+		.search-form
+			input
+				col(8)
+			button
+				col(3.7)
