@@ -18,6 +18,12 @@
 			padding-top em(10)
 		li
 			padding-bottom em(10)
+		ul.helper-side
+			margin-top em(25)
+		li.search, li.to-top
+			a
+				background-color BC2
+				color #F3F3F3
 		a
 			line-height em(30)
 			width em(30)
@@ -27,7 +33,6 @@
 			text-align center
 			font-size em(24)
 			color white
-			t-anim( background-color, color )
+			t-anim( box-shadow )
 		a:hover
-			background-color BC1
-			color TCD
+			box-shadow 4px 4px 5px BC1
