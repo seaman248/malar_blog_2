@@ -62,15 +62,16 @@ _window.load(function(){
 	});
 
 	// To top button
+	var _toTop = $('.to-top');
 	$('.to-top a').click(function(){
 		$('html, body').animate({scrollTop: 0}, 700);
 		return false;
 	});
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 100) {
-			$('.to-top').fadeIn();
+			_toTop.fadeIn();
 		} else {
-			$('.to-top').fadeOut();
+			_toTop.fadeOut();
 		}
 	})
 });
