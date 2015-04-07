@@ -45,7 +45,7 @@ gulp.task('img', function(){
 gulp.task('html', function(){
 	gulp.src('./src/jade/index.jade')
 		.pipe(jade({
-			pretty: false
+			pretty: true
 		}))
 		.pipe(gulp.dest('./dest/'))
 		.pipe(connect.reload());
