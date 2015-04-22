@@ -69,7 +69,7 @@ _window.load(function(){
 		$('html, body').animate({scrollTop: 0}, 700);
 		return false;
 	});
-	$(window).scroll(function(){
+	_window.scroll(function(){
 		if($(this).scrollTop() > 100) {
 			_toTop.fadeIn();
 		} else {
